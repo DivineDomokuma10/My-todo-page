@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: corbel;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(55deg, rgb(6, 185, 6), skyblue, rgb(44, 142, 180));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main{
+    width: 55%;
+    height: 100%;
+    /* background-color: aliceblue; */
+    margin: auto;
+}
+nav{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background: black;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    opacity: 0.96;
+    transition: 0.5s;
+    display: none;
+}
+#navCancelBtn{
+    width: 15%;
+    height: 7%;
+    font-size: 35px;
+    margin-left: 75%;
+    background: none;
+    border: none;
+    color: white;
+}
+#darkBtn{
+    width: 50%;
+    height: 10%;
+    margin-left: 25%;
+    margin-top: 30%;
+    color: white;
+    background: #201e1e;
+    border: none;
+    font-weight: bold;
+}
+#darkBtn:hover{
+    background: #0f0d0d;
+}
+#lightBtn{
+    width: 50%;
+    height: 10%;
+    margin-left: 25%;
+    margin-top: 30%;
+    color: black;
+    background-color: aliceblue;
+    border: none;
+    font-weight: bold;
+}
+#toggleBtn{
+    width: 5%;
+    height: 6%;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    display: none;
+}
+h1{
+    text-align: center;
+    color: rgb(44, 142, 180);
+}
+#form{
+    width: 60%;
+    height: 6%;
+    margin: 0 auto;
+    /* background: yellow; */
+    display: flex;
+    justify-content: space-between;
+
+}
+#item-inpt{
+    width: 70%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid gray;
+    outline: none;
+    padding: 5px;
+    transition: 0.5s;
+}
+#item-inpt:focus{
+    border: 2px solid rgb(6, 185, 6);
+}
+#item-btn{
+    width: 15%;
+    height: 100%;
+    transition: 0.5s;
+}
+#item-btn:hover{
+    height: 100%;
+    background: rgb(44, 142, 180);
+    color: aliceblue;
+    border: none;
+}
+#item-ul{
+    width: 75%;
+    margin-top: 2%;
+    margin: 0 auto;
+}
+.items{
+    width: 100%;
+    height: 40%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.69);
+    border-bottom: 1px solid white;
+    padding: 6px;
+    display: flex;
+    background: white;
+    justify-content: space-between;
+    border-radius: 4px;
+    margin-top: 7px;
+    color: rgb(6, 185, 6);
+    font-weight: bold;
+}
+label{
+    margin-top: 2px;
+}
+.checkBtnDiv{
+    width: 8%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.chckBox{
+    margin-top: 7px;
+}
+.delete{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(6, 185, 6);
+    background: none;
+    border: none;
+}
+/* #clear-btn{
+    width: 15%;
+    height: 100%;
+    display: none;
+    transition: 0.5s;
+} */
+#clear-btn:hover{
+    background: rgb(6, 185, 6);
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+@media(max-width: 500px){
+    body{
+        max-width: 500px;
+        max-height: 750px;
+    }
+    main{
+        width: 95%;
+        height: 100%;
+    }
+    nav{
+        display: block;
+    }
+    #toggleBtn{
+        display: inline-block;
+        color: black;
+    }
+    #form{
+        width: 80%;
+        height: 6%;
+    }
+    #item-inpt{
+        border-radius: 4px;
+    }
+    #item-btn:hover{
+        border-radius: 4px;
+    }
+    #item-ul{
+        width: 95%;
+        height: 6%;
+    }
+    .items{
+        height: 70%;
+    }
+    .chck-box{
+        width: 15%;
+        height: 90%;
+        /* background: blue; */
+    }
+
+}
